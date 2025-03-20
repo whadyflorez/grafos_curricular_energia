@@ -1,0 +1,20 @@
+digraph {
+	rankdir=TB size=12
+	Fluidos [label=Fluidos fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	TermoQ [label="Termodinámica Química" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	"Termodinámica" [label="Termodinámica" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	Transferencia [label="Transferencia de Calor" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	"Máquinas" [label="Máquinas Térmicas" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	CFD [label=CFD fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	"Gestión" [label="Gestión de Recursos Energéticos" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	"Aeronáutica" [label="Aeronáutica" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	Lab [label="Lab Procesos y Sistemas Energéticos" fillcolor=lightblue fontname=Arial fontsize=12 shape=rect style=filled]
+	Fluidos -> "Termodinámica"
+	TermoQ -> "Termodinámica"
+	"Termodinámica" -> Transferencia
+	Transferencia -> "Máquinas"
+	Transferencia -> CFD
+	"Máquinas" -> "Gestión"
+	CFD -> "Aeronáutica"
+	"Termodinámica" -> Lab
+}
